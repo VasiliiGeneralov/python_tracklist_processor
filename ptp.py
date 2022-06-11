@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 def colon_to_sec(inp: str) -> int:
+    inp = inp.lstrip().rstrip()
     inp_tokens = [token for token in inp.split(':') if token]
     result = 0
     for amount in inp_tokens:
